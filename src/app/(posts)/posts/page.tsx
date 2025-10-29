@@ -1,6 +1,6 @@
 // import React from "react";
-// import Posts from "@/modules/posts";
+// import Comments from "@/modules/comments";
 // const PostsPage = () => {
-//   return ;
+//   return <Comments />;
 // };
 // export default PostsPage;

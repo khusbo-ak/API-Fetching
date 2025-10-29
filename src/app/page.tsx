@@ -10,8 +10,8 @@ const AlbumPage = () => {
     <div className="bg-white text-black min-h-screen ">
       <Album />
       <Posts />
-      <Users />
       <Comments />
+      <Users />
     </div>
   );
 };

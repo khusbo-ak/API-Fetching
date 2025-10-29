@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -17,10 +17,12 @@ const Users = () => {
       console.error("Errors:", error);
     }
   }
-
+  useEffect(() => {
+    getdata();
+  }, []);
   return (
     <div className="bg-yellow-500 text-white px-2 shadow-md hover:bg-yellow-400">
-      <button onClick={getdata}>View Users</button>
+      {/* <button onClick={getdata}>View Users</button> */}
       {users.length > 0 &&
         users.map((users: any) => (
           <div

@@ -15,13 +15,10 @@ const Comments = () => {
       console.error("Errors:", error);
     }
   }
-  useEffect(() => {
-    getData();
-  }, []);
 
   return (
     <div className="bg-purple-400 text-white px-2 shadow-md hover:bg-purple-300">
-      {/* <button onClick={getData}> View Comments</button> */}
+      <button onClick={getData}> View Comments</button>
 
       {comments.length > 0 &&
         comments.map((comments: any) => (

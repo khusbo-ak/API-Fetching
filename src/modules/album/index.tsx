@@ -16,14 +16,14 @@ const Album = () => {
       console.error("Error:", error);
     }
   }
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
   return (
-    <div className="bg-white text-black min-h-screen ">
-      {/* <button onClick={getData}>View Albums</button> */}
+    <div className="bg-blue-900 text-white px-2 shadow-md hover:bg-blue-500">
+      <button onClick={getData}>View Albums</button>
       {albums.length > 0 && (
-        <div className="grid grid-cols-4 gap-4 p-4 bg-blue-600">
+        <div className="grid grid-cols-4 gap-4 p-4 bg-white text-black">
           {albums.map((album: any) => (
             <div className="bg-slate-800 text-white border" key={album.id}>
               <p>{album.title}</p>
